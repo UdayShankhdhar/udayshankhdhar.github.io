@@ -1,219 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Uday Shankhdhar | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
+    <title>Uday Shankhdhar | Personal Portfolio</title>
 
-body {
-    background: #0f172a;
-    color: #e2e8f0;
-    scroll-behavior: smooth;
-}
+    <meta
+        name="description"
+        content="Personal portfolio of Uday Shankhdhar, a Computer Science student and developer."
+    >
 
-header {
-    background: linear-gradient(135deg, #3b82f6, #06b6d4);
-    padding: 40px;
-    text-align: center;
-}
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://example.com/">
 
-header h1 {
-    font-size: 2.5rem;
-}
+    <meta property="og:title" content="Uday Shankhdhar | Portfolio">
+    <meta
+        property="og:description"
+        content="Personal portfolio of Uday Shankhdhar."
+    >
+    <meta property="og:type" content="website">
 
-header p {
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    background: #1e293b;
-    padding: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #38bdf8;
-}
-
-.container {
-    padding: 40px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-h2 {
-    margin-bottom: 15px;
-    color: #38bdf8;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-.skill-bar {
-    margin: 10px 0;
-}
-
-.bar {
-    height: 8px;
-    background: #334155;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.fill {
-    height: 100%;
-    background: #38bdf8;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #1e293b;
-}
-
-button {
-    padding: 10px 15px;
-    border: none;
-    background: #38bdf8;
-    color: black;
-    border-radius: 6px;
-    cursor: pointer;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <h1>Uday Shankhdhar</h1>
-    <p>Full Stack Developer | CSE Student (Batch 2027)</p>
-</header>
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <header>
+        <nav aria-label="Main navigation">
+            <a class="logo" href="index.html">Uday</a>
 
-<div class="container">
+            <ul>
+                <li>
+                    <a href="index.html" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-<section id="about" class="card">
-    <h2>About Me</h2>
-    <p>
-        Motivated Computer Science Engineering student with strong foundation in 
-        Data Structures, Algorithms, and Web Development. I build real-world 
-        projects focused on security, performance, and user experience.
-    </p>
-</section>
+    <main id="main-content">
 
-<section id="skills" class="card">
-    <h2>Skills</h2>
+        <section class="hero" aria-labelledby="hero-title">
+            <p class="eyebrow">Hello, I'm</p>
 
-    <p>C++</p>
-    <div class="bar"><div class="fill" style="width:85%"></div></div>
+            <h1 id="hero-title">Uday Shankhdhar</h1>
 
-    <p>Python</p>
-    <div class="bar"><div class="fill" style="width:80%"></div></div>
+            <p class="hero-text">
+                A Computer Science student passionate about web development,
+                programming, and building useful digital solutions.
+            </p>
 
-    <p>React.js</p>
-    <div class="bar"><div class="fill" style="width:75%"></div></div>
+            <div class="buttons">
+                <a class="button" href="projects.html">
+                    View My Projects
+                </a>
 
-    <p>HTML & CSS</p>
-    <div class="bar"><div class="fill" style="width:90%"></div></div>
+                <a class="button secondary" href="contact.html">
+                    Contact Me
+                </a>
+            </div>
+        </section>
 
-    <p>DBMS / MySQL</p>
-    <div class="bar"><div class="fill" style="width:70%"></div></div>
+        <section aria-labelledby="skills-title">
+            <h2 id="skills-title">My Skills</h2>
 
-</section>
+            <ul class="skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>SQL</li>
+            </ul>
+        </section>
 
-<section id="projects" class="card">
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <strong>Zero Trust Security System</strong><br>
-            Built a Zero Trust Network using JWT & 2FA with AI-based anomaly detection.
-        </li>
-        <br>
-        <li>
-            <strong>AlgoNavigator</strong><br>
-            Interactive algorithm visualizer with BFS, DFS, Dijkstra, Sorting.
-        </li>
-        <br>
-        <li>
-            <strong>Student Portal</strong><br>
-            Web-based system for managing student records and marks.
-        </li>
-    </ul>
-</section>
+    </main>
 
-<section class="card">
-    <h2>Achievements</h2>
-    <ul>
-        <li>Solved 310+ DSA problems</li>
-        <li>Infosys Springboard DBMS Certification</li>
-    </ul>
-</section>
-
-<section id="contact" class="card">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:shankhdharuday2@gmail.com">shankhdharuday2@gmail.com</a></p>
-    <p>Phone: +91-8218345395</p>
-    <p>
-        <a href="https://github.com/UdayShankhdhar" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/uday-shankhdhar-b885bb295" target="_blank">LinkedIn</a> |
-        <a href="https://leetcode.com/u/UdayShankhdhar" target="_blank">LeetCode</a>
-    </p>
-</section>
-
-</div>
-
-<footer>
-    <p>© 2026 Uday Shankhdhar</p>
-    <button onclick="toggleMode()">Toggle Theme</button>
-</footer>
-
-<script>
-function toggleMode() {
-    document.body.classList.toggle("light");
-    if(document.body.classList.contains("light")) {
-        document.body.style.background = "#f4f4f4";
-        document.body.style.color = "#000";
-    } else {
-        document.body.style.background = "#0f172a";
-        document.body.style.color = "#e2e8f0";
-    }
-}
-</script>
+    <footer>
+        <p>&copy; 2026 Uday Shankhdhar. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
